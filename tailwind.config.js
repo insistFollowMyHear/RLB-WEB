@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        'primary': '#027BF0'
+      },
+      screens: {
+        '3xl': '1920px',
+        // => @media (min-width: 1920px) { ... }
+      }
+    }
   },
   plugins: [],
 }
